@@ -6,10 +6,10 @@ import torch
 print("DEVICE:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU")
 
 # === 1. Настройки ===
-model_name = "gpt2"
+model_name = "sberbank-ai/rugpt3medium_based_on_gpt2"
 max_length = 512
 dataset_path = "dataset_1000.jsonl"
-output_dir = "./gpt2-gm"
+output_dir = "./ru-gm"
 
 # === 2. Загрузка модели и токенизатора ===
 tokenizer = AutoTokenizer.from_pretrained(model_name)
